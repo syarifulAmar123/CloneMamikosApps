@@ -22,6 +22,9 @@ export function Login() {
     Alert.alert('Anda memilih', value);
     setValue('');
   };
+  const HandlerWebbView = () => {
+    navigation.navigate('Penjelasan');
+  };
   const [data, setData] = useState([
     {
       gambar:
@@ -103,7 +106,7 @@ export function Login() {
               borderTopRightRadius: 10,
             }}
           />
-          <View>
+          <View style={{justifyContent: 'flex-start'}}>
             <Text
               style={{
                 color: 'black',
@@ -123,10 +126,20 @@ export function Login() {
                 source={require('../../assets/placeholder.png')}
                 style={{width: 20, height: 20}}
               />
-              <Text style={{color: 'black'}}>{item.alamat}</Text>
+              <Text style={{color: 'black', marginLeft: 8}}>{item.alamat}</Text>
             </View>
-            <Text style={{color: 'black'}}>{item.detail}</Text>
-            <Text style={{color: 'black'}}>{item.price}</Text>
+            <Text style={{color: 'black', marginTop: 10, marginLeft: 5}}>
+              {item.detail}
+            </Text>
+            <Text
+              style={{
+                color: 'black',
+                marginTop: 15,
+                marginLeft: 10,
+                fontSize: 21,
+              }}>
+              {item.price}
+            </Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -226,7 +239,9 @@ export function Login() {
           height: 50,
           borderRadius: 12,
           elevation: 3,
-        }}>
+        }}
+        activeOpacity={0.7}
+        onPress={() => HandlerWebbView()}>
         <Text style={{color: 'white', marginLeft: 10}}>Anda Pemilik Iklan</Text>
         <TouchableOpacity
           style={{
