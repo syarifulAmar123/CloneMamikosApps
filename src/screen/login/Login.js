@@ -106,13 +106,14 @@ export function Login() {
               borderTopRightRadius: 10,
             }}
           />
-          <View style={{justifyContent: 'flex-start'}}>
+          <View style={{padding: 10}}>
             <Text
               style={{
                 color: 'black',
                 fontSize: 18,
                 fontFamily: 'Roboto-Medium',
                 marginTop: 10,
+                alignItems: 'flex-start',
               }}>
               {item.jenis}
             </Text>

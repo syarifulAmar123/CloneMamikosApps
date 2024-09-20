@@ -4,10 +4,14 @@ import {View, Text, StatusBar, Image} from 'react-native';
 const DetailScreen = ({route}) => {
   const {item} = route?.params;
   return (
-    <View style={{flex: 1, backgroundColor: 'white'}}>
-      <StatusBar barStyle={'dark-content'} backgroundColor={'white'} />
+    <View style={{flex: 1, backgroundColor: '#2222'}}>
+      <StatusBar barStyle={'dark-content'} backgroundColor={'#141f1d'} />
       <View style={{justifyContent: 'center', alignItems: 'center'}}>
-        <Image source={{uri: item.gambar}} style={{width: 400, height: 400}} />
+        <Image
+          source={{uri: item.gambar}}
+          style={{width: '100%', height: 300}}
+          resizeMode="container"
+        />
       </View>
       <Text
         style={{
@@ -28,14 +32,6 @@ const DetailScreen = ({route}) => {
       <Text style={{color: 'black', marginLeft: 10, marginTop: 5}}>
         {item.price}
       </Text>
-      <View style={{marginTop: 130, marginLeft: 290}}>
-        <Image
-          source={{
-            uri: 'https://th.bing.com/th/id/OIP.Bwj7f5SSDzSIh5zq-zIZVwHaE8?w=273&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7',
-          }}
-          style={{width: 100, height: 100}}
-        />
-      </View>
     </View>
   );
 };
