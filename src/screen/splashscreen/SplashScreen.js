@@ -40,12 +40,15 @@ const SplashScreen = () => {
         }}>
         #EnaknyaNgekos
       </Text>
-      <ActivityIndicator
-        size={'large'}
-        color={'white'}
-        style={{marginTop: 190}}
-      />
-      <Text style={{marginTop: 230}}>Aplikasi Anak Kos No. 1 di Indoneisa</Text>
+      <Text
+        style={{
+          marginTop: 230,
+          fontSize: 17,
+          fontStyle: 'italic',
+          fontWeight: '600',
+        }}>
+        Aplikasi Anak Kos No. 1 di Indoneisa
+      </Text>
     </View>
   );
 };

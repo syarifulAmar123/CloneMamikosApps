@@ -32,15 +32,15 @@ export function Login() {
       jenis: 'Kost Casual',
       alamat: 'Bandung',
       detail: 'K. Mandi Dalam . AC . Kloset Duduk',
-      price: '1.950.000',
+      price: '1.950.000/Months',
     },
     {
       gambar:
         'https://static.mamikos.com/uploads/cache/data/style/2020-10-05/L8j0Ngma-360x480.jpg',
       jenis: 'Vvip Homestay',
       alamat: 'Ulubatu , Bali tengah',
-      detail: 'Private Swimming , Deket Atlas beach ',
-      price: '3.800.000/bulan',
+      detail: 'Private Swimming , Deket Atlas',
+      price: '3.800.000/Months',
     },
     {
       gambar:
@@ -48,7 +48,7 @@ export function Login() {
       jenis: 'Jack Daniles Kost & Bar',
       alamat: 'Lombok Island',
       detail: 'Private  Snorkling . K. Mandi Dalam',
-      price: '7.500.000/bulan',
+      price: '7.500.000/Months',
     },
     {
       gambar:
@@ -56,7 +56,7 @@ export function Login() {
       jenis: 'Alfarabbi house',
       alamat: 'Bantul , Yogyakarta',
       detail: 'Include Wifi . K .Mandi Luar',
-      price: '1.500.000',
+      price: '1.500.000/Months',
     },
     {
       gambar:
@@ -64,15 +64,15 @@ export function Login() {
       jenis: 'Johnson Roommate',
       alamat: 'Cirebon Jawa Barat',
       detail: 'Di tengah Kota Cirebon . Adem . AC ',
-      price: '1.200.000',
+      price: '1.200.000/Months',
     },
     {
       gambar:
         'https://static.mamikos.com/uploads/cache/data/style/2023-11-06/LIrDUeoK-240x320.jpg',
       jenis: 'Barokah Kost Putra',
       alamat: 'Pare Jawa Timur , Kediri',
-      detail: 'Kamar mandi Dalam . Wifi area . Kipas Angin',
-      price: '400.000/bulan',
+      detail: 'Kamar mandi Dalam . Wifi area ',
+      price: '400.000/Months',
     },
     {
       gambar:
@@ -80,7 +80,7 @@ export function Login() {
       jenis: 'Daniessan House',
       alamat: 'Jatibarang Indramayu',
       detail: 'K . Mandi dalam . AC . Kedap Suara',
-      price: '2.500.000',
+      price: '2.500.000/Months',
     },
   ]);
   const renderItem = ({item}) => {
@@ -91,9 +91,10 @@ export function Login() {
           style={{
             width: 250,
             height: 350,
-            backgroundColor: '#dcdde1',
+            backgroundColor: 'white',
             alignItems: 'center',
             borderRadius: 10,
+            elevation: 2,
           }}
           activeOpacity={0.75}
           onPress={() => handlerDetail(item)}>
