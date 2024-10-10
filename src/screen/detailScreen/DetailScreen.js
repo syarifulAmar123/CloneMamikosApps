@@ -1,22 +1,22 @@
 import React from 'react';
-import {View, Text, StatusBar, Image} from 'react-native';
+import {View, Text, StatusBar, Image, ImageBackground} from 'react-native';
 
 const DetailScreen = ({route}) => {
   const {item} = route?.params;
   return (
-    <View style={{flex: 1, backgroundColor: '#2222'}}>
-      <StatusBar barStyle={'dark-content'} backgroundColor={'#2222'} />
+    <View style={{flex: 1, backgroundColor: 'white'}}>
+      <StatusBar barStyle={'light-content'} backgroundColor={'#1baa56'} />
       <View style={{justifyContent: 'center', alignItems: 'center'}}>
-        <Image
+        <ImageBackground
           source={{uri: item.gambar}}
-          style={{width: '100%', height: 300}}
+          style={{width: '100%', height: 300, elevation: 4}}
           resizeMode="container"
         />
       </View>
       <Text
         style={{
           marginLeft: 10,
-          marginTop: 10,
+          marginTop: 30,
           fontSize: 33.5,
           color: 'black',
           fontFamily: 'PlaywriteCU-VariableFont_wght',
@@ -27,7 +27,7 @@ const DetailScreen = ({route}) => {
         style={{
           color: 'black',
           marginLeft: 20,
-          marginTop: 50,
+          marginTop: 40,
           fontSize: 21,
         }}>
         <Text style={{fontWeight: 'bold', marginLeft: 20}}>Alamat</Text> :{' '}
@@ -47,6 +47,7 @@ const DetailScreen = ({route}) => {
           marginHorizontal: 35,
           color: 'red',
           fontSize: 15,
+          fontWeight: '700',
           fontFamily: 'Roboto-ThinItalic',
         }}>
         Mamikos Tempat Mencari Hunian Terbaik Anda
