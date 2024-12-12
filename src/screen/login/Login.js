@@ -147,14 +147,13 @@ export function Login() {
       <View
         style={{
           backgroundColor: 'white',
-          marginHorizontal: 10,
           marginTop: 20,
-          padding: 10,
+          padding: 5,
         }}>
         <TouchableOpacity
           style={{
-            width: 250,
-            height: 350,
+            width: 200,
+            height: 300,
             backgroundColor: 'white',
             alignItems: 'center',
             borderRadius: 10,
@@ -165,13 +164,13 @@ export function Login() {
           <Image
             source={{uri: item.gambar}}
             style={{
-              width: 250,
-              height: 170,
+              width: 200,
+              height: 120,
               borderTopLeftRadius: 10,
               borderTopRightRadius: 10,
             }}
           />
-          <View style={{padding: 10}}>
+          <View style={{padding: 5}}>
             <Text
               style={{
                 color: 'black',
@@ -189,7 +188,7 @@ export function Login() {
                 marginTop: 10,
               }}>
               <Image
-                source={require('../../assets/placeholder.png')}
+                source={require('../../assets/map_531221.png')}
                 style={{width: 20, height: 20}}
               />
               <Text style={{color: 'black', marginLeft: 8}}>{item.alamat}</Text>
@@ -201,8 +200,7 @@ export function Login() {
               style={{
                 color: 'black',
                 marginTop: 15,
-                marginLeft: 10,
-                fontSize: 21,
+                fontSize: 18,
               }}>
               {item.price}
             </Text>
@@ -216,15 +214,14 @@ export function Login() {
       <View
         style={{
           backgroundColor: 'white',
-          marginHorizontal: 10,
-          marginTop: 30,
-          padding: 13,
+          marginTop: 20,
+          padding: 5,
           marginBottom: 20,
         }}>
         <TouchableOpacity
           style={{
-            width: 250,
-            height: 350,
+            width: 200,
+            height: 300,
             backgroundColor: 'white',
             alignItems: 'center',
             borderRadius: 10,
@@ -235,13 +232,13 @@ export function Login() {
           <Image
             source={{uri: item.gambar}}
             style={{
-              width: 250,
-              height: 170,
+              width: 200,
+              height: 120,
               borderTopLeftRadius: 10,
               borderTopRightRadius: 10,
             }}
           />
-          <View style={{padding: 10}}>
+          <View style={{padding: 5}}>
             <Text
               style={{
                 color: 'black',
@@ -259,7 +256,7 @@ export function Login() {
                 marginTop: 10,
               }}>
               <Image
-                source={require('../../assets/placeholder.png')}
+                source={require('../../assets/map_531221.png')}
                 style={{width: 20, height: 20}}
               />
               <Text style={{color: 'black', marginLeft: 8}}>{item.alamat}</Text>
@@ -270,9 +267,8 @@ export function Login() {
             <Text
               style={{
                 color: 'black',
-                marginTop: 15,
-                marginLeft: 10,
-                fontSize: 21,
+                marginTop: 10,
+                fontSize: 18,
               }}>
               {item.price}
             </Text>
@@ -410,7 +406,8 @@ export function Login() {
               justifyContent: 'center',
               alignItems: 'center',
               borderRadius: 3,
-            }}>
+            }}
+            onPress={() => HandlerWebbView()}>
             <Text
               style={{
                 color: 'white',

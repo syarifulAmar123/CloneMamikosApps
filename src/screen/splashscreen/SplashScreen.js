@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useEffect} from 'react';
-import {View, Image, ActivityIndicator, Text, StatusBar} from 'react-native';
+import {View, Image, Text, StatusBar} from 'react-native';
 
 const SplashScreen = () => {
   const navigation = useNavigation();
@@ -15,9 +15,9 @@ const SplashScreen = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#32cc36',
+        backgroundColor: '#27ae60',
       }}>
-      <StatusBar barStyle={'light-content'} backgroundColor={'#32cc36'} />
+      <StatusBar barStyle={'light-content'} backgroundColor={'#27ae60'} />
       <Image
         source={require('../../assets/Frame1.png')}
         style={{width: 300, height: 200}}
@@ -26,7 +26,7 @@ const SplashScreen = () => {
         style={{
           color: 'white',
           fontSize: 70,
-          fontFamily: 'Roboto- Bold',
+          fontFamily: 'Roboto-Bold',
           marginTop: -60,
         }}>
         mamikos
@@ -35,7 +35,7 @@ const SplashScreen = () => {
         style={{
           color: 'white',
           fontSize: 25,
-          fontFamily: 'Roboto- Bold',
+          fontFamily: 'Roboto-Bold',
           marginTop: -10,
         }}>
         #EnaknyaNgekos
